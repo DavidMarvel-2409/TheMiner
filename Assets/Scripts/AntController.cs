@@ -17,7 +17,7 @@ public class AntController : MonoBehaviour
     private Vector3Int? celdaColision = null;
     void Start()
     {
-        
+
     }
 
     void Update()
@@ -86,7 +86,7 @@ public class AntController : MonoBehaviour
         TileBase tileActual = tilemap.GetTile(celdaColision.Value);
         if (tileActual == tilePared) return;
         tilemap.SetTile(celdaColision.Value, tileVacio);
-        Debug.Log("Excavado");
+        // Debug.Log("Excavado");
     }
 
 }
